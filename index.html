@@ -5,11 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Women's Day 2022</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #e2aa01;
+      font-family: 'Dancing Script', cursive;
+    }
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    body{
+      overflow: hidden;
+    }
+    .fireworks {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: url('https://imgservices-1252317822.image.myqcloud.com/image/081320210201435/e9951400.png') right top no-repeat;
+        background-size: auto 150px;
+        animation: fireworks 2s steps(24) infinite, random 8s steps(1) infinite;
+    }
+    @keyframes fireworks {
+        0% {
+            background-position: 0%;
+        }
+        50%,
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+
+    @keyframes random {
+        0% {
+            transform: translate(0, 0);
+        }
+        25% {
+            transform: translate(200%, 50%) scale(0.8);
+        }
+        50% {
+            transform: translate(80%, 80%) scale(1.2);
+        }
+        75% {
+            transform: translate(20%, 60%) scale(0.65);
+        }
+    }
+    @media screen and (prefers-reduced-motion) { 
+        .fireworks { 
+            animation: none; 
+        } 
+    }
+  </style>
 </head>
 <body>
-<div style="text-align: center; border: solid 2px red">
-    <h1 style="color: red;">&hearts;&hearts;&hearts;Happy Women's Day 2022&hearts;&hearts;&hearts;</h3>
-    <p>Chúc bạn một ngày 8/3 vui vẻ<br> Hạnh phúc bên gia đình và những người thân yêu<br> Luôn mạnh khoẻ và yêu đời nhé!</p>
+<div style="padding-left: 20px;" class="vertical-center">
+  <h1 style="color: white; font-size: 70px; font-weight: bold; text-shadow: 2px 2px black;">Happy Women's Day 2022🎉🎉</h3>
+  <p style="color: white; font-size: 20px; font-weight: bold;">Chúc Phước một ngày 8/3 vui vẻ<br> Hạnh phúc bên gia đình và những người thân yêu<br> Luôn mạnh khoẻ và yêu đời nhé!</p>
+
+  <div class="fireworks" style="left: 15%; top: 5%;"></div>
+  <div class="fireworks" style="right: 30%; top: 13%; animation-delay: -0.4s;"></div>
+  <div class="fireworks" style="left: 5%; top: 23%; animation-delay: -1.7s;"></div>
+  <div class="fireworks" style="right: 45%; top: 8%; animation-delay: -3.1s;"></div>
 </div>
 </body>
 </html>
